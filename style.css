@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:root{
+	--primary-color:#22254b;
+	--secondary-color: #373b69;
+}
+html, body {
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	background-color: #eee;
+}
+
+header{
+	padding:1rem;
+	display:flex;
+	justify-content: space-between;
+	background-color: var(--secondary-color);
+}
+.logo {
+	padding: 0 1em;
+}
+.logo a {
+	color: #fff;
+	font-size: 25px;
+}
+.search{
+	background-color: transparent;
+	border: 2px solid var(--primary-color);
+	padding:0.5rem 1rem;
+	border-radius: 50px;
+	font-size: 1rem;
+	color:#fff;
+	font-family: inherit;
+}
+
+.search:focus{
+	outline:0;
+	background-color: var(--primary-color);
+}
+
+.search::placeholder{
+	color: #7378c5;
+}
+h1#years {
+	margin-bottom: 1em;
+	text-align: center;
+	color: #fff;
+}
+
+main {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-content: stretch;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+}
+.movie {
+	width: 100%;
+}
+.movie-card,
+.trailer_link {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	color: #212121;
+	font-family: Roboto, sans-serif;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: stretch;
+	margin-top: 1em;
+}
+
+.movie-card__header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	height: 72vh;
+	padding: 16px;
+	box-sizing: inherit;
+	background-position: 50% 20%;
+	background-size: cover;
+	box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.movie-card_genre {
+	z-index: 9;
+	padding: 4px 8px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1;
+	background-color: #fdd835;
+	border-radius: 1rem;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.movie-card_genre + .movie-card_genre {
+	margin-left: 8px;
+}
+
+.movie-card_content {
+	padding: 16px;
+	box-sizing: inherit;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.25;
+}
+.movie-card_content p {
+	marging: 0 0 8px;
+}
+.movie-card_content p strong {
+	font-weight: 500;
+}
+.movie-card_content div.d {
+	margin-bottom: 1em;
+}
+.movie-card_content div.contenedor {
+	padding: 1em;
+	width: 100%;
+}
+.movie-card_content div.border {
+	border: 1px solid #000;
+}
+
+.movie-card__poster {
+	position: absolute;
+	display: inline-block;
+	float: left;
+	height: 321px;
+	width: 214px;
+	box-sizing: inherit;
+	margin-top: -350px;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.movie-card__title {
+	margin: 0 0 8px;
+	box-sizing: inherit;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.25rem;
+}
+
+.movie-card__button {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	padding: 0 16px;
+	box-sizing: inherit;
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 36px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #fdd835;
+	border-radius: 17px;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+	transition: box-shadow 180ms ease-out;
+}
+.movie-card__button + .movie-card__button {
+	margin-left: 8px;
+}
+.movie-card__button:hover, .movie-card__button:focus {
+	box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+.movie-card__button:active {
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.movie-card__button .material-icons {
+	display: inline-flex;
+	margin: 6px -10px;
+}
