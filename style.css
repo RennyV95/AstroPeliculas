@@ -14,7 +14,6 @@
 html, body {
 	height: 100%;
 	font-size: 100%;
-text-overflow: ellipsis;
 }
 a {
     text-decoration:none;
@@ -213,6 +212,7 @@ main {
         width: 100%;
         text-align: center;
         padding-bottom: 1rem;
+        Font-size: 16px;
     }
     main {
         width: 100%;
