@@ -177,7 +177,7 @@ function showMovies(data) {
 					</div>
 					<div class="titulo_en"><b>📽&nbsp;&#95;<i>${original_title}</i>&#95;</b></div>
 					<div class="separador">▬▬▬▬▬▬▬▬▬▬▬▬▬▬</div>
-					<div class="puntuacion"><b>🔝&nbsp;&#42;Puntuación TMDB&nbsp;|&#42;</b>&nbsp;&#42;<span style="color:${getColor(vote_average)}">${vote_average}</span>&#42;</div><br>
+					<div class="puntuacion"><b>🔝&nbsp;&#42;Puntuación TMDB&nbsp;|&#42;</b>&nbsp;&#95;<span style="color:${getColor(vote_average)}">${vote_average}</span>&#95;</div><br>
 					<div class="genero"><b>🎭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Género&nbsp;|&#42;</b>&nbsp;&#42;${genre_ids.map(id => `#${genreIdToName(id).replace(/\s/g,function(match) {return replaceTitle[match];})}`).join(' ')}&#42;</div><br>
 					<div class="ano"><b>🗓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Año&nbsp;|&#42;</b>&nbsp;&#95;<i>${release_date.substring(4,0)}</i>&#95;</div><br>
 					<div class="calidad"><b>📺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Calidad&nbsp;|&#42;&nbsp;&#42;#720p&#42;</b></div><br>
