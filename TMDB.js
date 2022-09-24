@@ -162,7 +162,7 @@ function showMovies(data) {
 
 
 				<div class="contenedor border">
-					/rename ${title.replace(/:|\s|-|!|¡|,|¿/g,function(match) {return replaceTitle[match];})}_(${release_date.substring(4,0)})_720p_dual-lat_@AstroPeliculasOficial.mp4
+					${title.replace(/:|\s|-|!|¡|,|¿/g,function(match) {return replaceTitle[match];})}_(${release_date.substring(4,0)})_720p_dual-lat_@AstroPeliculasOficial
 				</div>
 				<div class="contenedor border">
 					<div class="titulo_es">
