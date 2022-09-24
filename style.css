@@ -15,13 +15,6 @@ html, body {
 	height: 100%;
 	font-size: 100%;
 }
-a {
-    text-decoration:none;
-    color:#003cff;
-}
-a:visited {
-    color: #000000;
-}
 
 body {
 	background-color: #eee;
@@ -35,7 +28,6 @@ header{
 }
 .logo {
 	padding: 0 1em;
-    width: 74%;
 }
 .logo a {
 	color: #fff;
@@ -76,13 +68,14 @@ main {
 	margin: 0 auto;
 }
 .movie {
-    width: 100%;
+	width: 100%;
 }
-.movie-card {
+.movie-card,
+.trailer_link {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	overflow: scroll;
+	overflow: hidden;
 	width: 100%;
 	box-sizing: border-box;
 	color: #212121;
@@ -101,7 +94,7 @@ main {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
-	height: 50vh;
+	height: 72vh;
 	padding: 16px;
 	box-sizing: inherit;
 	background-position: 50% 20%;
@@ -110,6 +103,7 @@ main {
 }
 
 .movie-card_genre {
+	z-index: 9;
 	padding: 4px 8px;
 	font-size: 0.75rem;
 	font-weight: 500;
@@ -117,7 +111,6 @@ main {
 	background-color: #fdd835;
 	border-radius: 1rem;
 	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-	z-index:9;
 }
 .movie-card_genre + .movie-card_genre {
 	margin-left: 8px;
@@ -148,11 +141,13 @@ main {
 }
 
 .movie-card__poster {
+	position: absolute;
+	display: inline-block;
 	float: left;
-	height: 400px;
-	width: 270px;
+	height: 321px;
+	width: 214px;
 	box-sizing: inherit;
-	margin-top: -420px;
+	margin-top: -350px;
 	background-position: center;
 	background-size: cover;
 	box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
@@ -213,11 +208,14 @@ main {
         text-align: center;
         padding-bottom: 1rem;
     }
-.logo a {
-Font-size: 14px;
-}
+    .logo a {
+        Font-size: 14px;
+    }
     main {
         width: 100%;
+    }
+    .movie-card {
+	overflow: scroll;
     }
     .movie-card__poster {
         height: 300px;
