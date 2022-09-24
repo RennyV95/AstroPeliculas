@@ -82,7 +82,7 @@ main {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
+	overflow: scroll;
 	width: 100%;
 	box-sizing: border-box;
 	color: #212121;
