@@ -198,9 +198,9 @@ function showMovies(data) {
 					<div class="separador">▬▬▬▬▬▬▬▬▬▬▬▬▬▬</div>
 					<div class="puntuacion"><b>🔝&nbsp;&#42;Puntuación TMDB&nbsp;|&#42;</b>&nbsp;&#42;<span style="color:${getColor(vote_average)}">${vote_average}</span>&#42;</div><br>
 					<div class="ano"><b>🗓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Año&nbsp;|&#42;</b>&nbsp;&#95;${release_date.substring(4,0)}&#95;</div><br>
-					<div class="calidad"><b>📺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Calidad&nbsp;|&#42;&nbsp;&#42;#720p&#42;</b></div><br>
-					<div class="idioma"><b>🗣&nbsp;&#42;Idioma Original&nbsp;|&#42;&nbsp;${original_language.replace(/en|fr|it|de|ja|es|ko/g,function(match) {return replaceLang[match];})}&#42;</b></div><br>
-					<div class="audio"><b>🎧&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Audio&nbsp;|&#42;&nbsp;🇲🇽&nbsp;&#42;#Latino&#42;</b></div>
+					<div class="calidad"><b>📺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Calidad&nbsp;|&#42;&nbsp;&#42;#720p&#42;</b></div><br>
+					<div class="idioma"><b>🗣&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Idioma Original&nbsp;|&#42;&nbsp;${original_language.replace(/en|fr|it|de|ja|es|ko/g,function(match) {return replaceLang[match];})}&#42;</b></div><br>
+					<div class="audio"><b>🎧&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#42;Audio&nbsp;|&#42;&nbsp;🇲🇽&nbsp;&#42;#Latino&#42;</b></div>
 					<div class="separador">▬▬▬▬▬▬▬▬▬▬▬▬▬▬</div>
 					<div class="redes"><b>▫️&nbsp;&#42;Síguenos&nbsp;como&#42;&nbsp;@AstroPeliculasOficial</b></div>
 				</div>
