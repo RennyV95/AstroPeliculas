@@ -212,8 +212,10 @@ main {
         width: 100%;
         text-align: center;
         padding-bottom: 1rem;
-        Font-size: 16px;
     }
+.logo a {
+Font-size: 14px;
+}
     main {
         width: 100%;
     }
