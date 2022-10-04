@@ -222,17 +222,16 @@ function showMovies(data) {
 		document.getElementById(id)
 			//console.log(id)
 			//console.log(id.results)
-			link_YT(movie)
+			openNav(movie)
 	})
 }
 
-function link_YT(movie) {
+
+function openNav(movie) {
 	let id = movie.id;
-	fetch(BASE_URL+'/movie/'+id+'/videos?'+API_KEY+LANG_ES).then(res => res.json()).then(trailer => {
-	//fetch(BASE_URL+'/movie/'+id+'?'+API_KEY+'&append_to_response=videos'+LANG_ES).then(res => res.json()).then(trailer => {
-		console.log(trailer)
-		//console.log(trailer.results)
-		//showTrailer(trailer.results)
+	fetch(BASE_URL+'/movie/'+id+'?'+API_KEY+'&append_to_response=videos'+LANG_ES).then(res => res.json()).then(trailer => {
+		const trailers = trailer.videos.results.filter(video => video.official === true && video.type === "Trailer");
+		console.log(trailers)
 	})
 }
 
